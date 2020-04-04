@@ -1,0 +1,6 @@
+{
+  "alias": "frontier",
+  "env": {
+    "BASE_URL": "https://frontier.now.sh"
+  }
+}

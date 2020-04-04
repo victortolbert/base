@@ -1,0 +1,31 @@
+{
+  "codeName": "Sauce",
+  "codeName": "Frontier",
+  "title": "The Sauce",
+  "title": "@tolbertdesign/app",
+  "what": "HTML and CSS to kickstart your project",
+  "what": "A hackday project to code standards, demos and examples",
+  "how": "Using the Strangler Pattern to lift a legacy project",
+  "version": "0.1.0",
+  "description": "An ever-evolving and opinionated user interface patterns library",
+  "why": "To document and demonstrate techniques learned since initial project scaffolding and the ui design system",
+  "why": "To document and demonstrate the ui design system",
+  "tagline": "House Arrest 2020",
+  "appUrl": "https://app.tolbert.design",
+  "appServerUrl": "https://tolbert.design",
+  "img": "/social.png",
+  "locale": "en_US",
+  "twitter": "design_coder",
+  "themes": {
+    "dark": {
+      "primary": {
+        "bg": "locker",
+        "accent": "#ccc",
+        "inverse": "#ccc",
+        "base": "#ccc",
+        "foreground": "#ccc",
+        "background": "#ccc"
+      }
+    }
+  }
+}

@@ -52,9 +52,9 @@ const actions = {
           stateNotification.read_at = new Date()
         }
       })
-      // eslint-disable-next-line
-            axon.update('users/notifications', notification.id, notification, () => {}, () => {})
+      this.$axon.update('users/notifications', notification.id, notification, () => {}, () => {})
         .catch(error => {
+          // eslint-disable-next-line
           console.log(error)
         })
       commit('SET_NOTIFICATIONS', stateNotifications)

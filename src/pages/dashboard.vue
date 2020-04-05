@@ -25,20 +25,24 @@ export default {
   },
   mounted () {
     function tidyUpAnimations () {
+      // eslint-disable-next-line
       console.log('tidying up...')
     }
 
     // Get the first position.
     const first = this.$el.getBoundingClientRect()
+    // eslint-disable-next-line
     console.log('first: ', first)
 
     // Now set the element to the last position.
     this.$el.classList.add('transform translate-y-12 duration-500 ease-in')
+    // eslint-disable-next-line
     console.log(this.$el)
 
     // Read again. This forces a sync
     // layout, so be careful.
     const last = this.$el.getBoundingClientRect()
+    // eslint-disable-next-line
     console.log('last: ', last)
 
     // You can do this for other computed
@@ -82,8 +86,14 @@ export default {
     function fetchDogs ({ breed }) {
       fetch(`https://dog.ceo/api/breed/${breed}/images`)
         .then(res => res.json())
-        .then(data => console.log(data))
-        .catch(error => console.log(error))
+        .then(data => {
+          // eslint-disable-next-line
+          console.log(data)
+        })
+        .catch(error => {
+          // eslint-disable-next-line
+          console.log(error)
+        })
     }
 
     const dog = {

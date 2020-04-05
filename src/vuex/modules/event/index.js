@@ -37,6 +37,7 @@ export const mutations = {
 }
 export const actions = {
   createEvent ({ commit, dispatch, rootState }, event) {
+    // eslint-disable-next-line
     console.log('User creating Event is ' + rootState.auth.user)
 
     return EventService.postEvent(event).then(() => {
@@ -50,6 +51,7 @@ export const actions = {
         commit('SET_EVENTS', response.data)
       })
       .catch(error => {
+        // eslint-disable-next-line
         console.log('There was an error:', error.response)
       })
   },
@@ -64,6 +66,7 @@ export const actions = {
           commit('SET_EVENT', response.data)
         })
         .catch(error => {
+          // eslint-disable-next-line
           console.log('There was an error:', error.response)
         })
     }

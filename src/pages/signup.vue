@@ -36,7 +36,13 @@
         </div>
         <div class="resources pt-8px pb-3">
           <p class="text-10 mb-0">
-            <span><a href="https://funrun.boosterthon.com/help" class="text-blackwhite">Need Help?</a></span> <span class="text-blackwhite">|</span> <span><a target="_blank" data-share="Spanish Help Landing Page" data-category="Spanish Pdf Guide" href="https://s3.amazonaws.com/funrun-prod/assets/pdf/spanish_guide_2017.pdf" class="text-blackwhite">Español?</a></span> <span class="text-blackwhite">|</span> <span><a data-toggle="modal" data-target="#privacyPolicyModal" href="#" class="text-blackwhite">Privacy Policy</a></span>
+            <span><a href="https://funrun.boosterthon.com/help" class="text-blackwhite">Need Help?</a></span> <span class="text-blackwhite">|</span> <span><a
+              target="_blank"
+              data-share="Spanish Help Landing Page"
+              data-category="Spanish Pdf Guide"
+              href="https://s3.amazonaws.com/funrun-prod/assets/pdf/spanish_guide_2017.pdf"
+              class="text-blackwhite"
+            >Español?</a></span> <span class="text-blackwhite">|</span> <span><a data-toggle="modal" data-target="#privacyPolicyModal" href="#" class="text-blackwhite">Privacy Policy</a></span>
           </p>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import { mount } from '@vue/test-utils'
-import titleMixin from '../mixins/titleMixin'
+import titleMixin from '@/mixins/titleMixin'
 
 describe('titleMixin', () => {
   test('set document.title using component title property', () => {

@@ -3,16 +3,17 @@ import Vuex from 'vuex'
 
 import SecureLS from 'secure-ls'
 import createPersistedState from 'vuex-persistedstate'
-import auth from './modules/auth'
-import program from './modules/program'
-import participant from './modules/participant'
-import pledge from './modules/pledge'
-import classroom from './modules/classroom'
-import microsite from './modules/microsite'
-import notification from './modules/notification'
-// import easy_emailer from './modules/easy_emailer'
+import auth from '@/vuex/modules/auth'
+import program from '@/vuex/modules/program'
+import participant from '@/vuex/modules/participant'
+import pledge from '@/vuex/modules/pledge'
+import classroom from '@/vuex/modules/classroom'
+import microsite from '@/vuex/modules/microsite'
+import notification from '@/vuex/modules/notification'
+import * as alert from '@/vuex/modules/alert'
+// import easy_emailer from '@/vuex/modules/easy_emailer'
 
-// import event from './modules/event'
+// import event from '@/vuex/modules/event'
 // import FamilyPledging from '@/utilities/FamilyPledging'
 
 const ls = new SecureLS({ isCompression: false })
@@ -28,6 +29,7 @@ const store = new Vuex.Store({
     classroom,
     microsite,
     notification,
+    alert,
     // easy_emailer,
     // event,
   },
@@ -54,8 +56,6 @@ const store = new Vuex.Store({
     photoDirty: false,
     isBetaUser: false,
     error: null,
-    items: [],
-    item: null,
   },
   getters: {
     lang: state => state.lang,

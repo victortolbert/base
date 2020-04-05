@@ -1,7 +1,7 @@
-import Vue from 'vue'
+// import Vue from 'vue'
 
-import BaseLink from '@/components/BaseLink/BaseLink'
-import BaseInput from '@/components/BaseInput/BaseInput'
+// import BaseLink from '@/components/BaseLink/BaseLink'
+// import BaseInput from '@/components/BaseInput/BaseInput'
 
 // import BaseTextarea from '@/components/BaseTextarea'
 // import BaseIcon from '@/components/element/BaseIcon'
@@ -13,10 +13,10 @@ import BaseInput from '@/components/BaseInput/BaseInput'
 
 // Where 'editor' is the name of the component <editor></editor>
 // Returns a promise that only gets called when the compoent is rendered and then cached.
-// Vue.component('editor', () => import('./componetns/Editor.vue'))
+// Vue.component('editor', () => import('@/components/Editor'))
 
-Vue.component('BaseInput', BaseInput)
-Vue.component('BaseLink', BaseLink)
+// Vue.component('BaseInput', BaseInput)
+// Vue.component('BaseLink', BaseLink)
 
 // Vue.component('BaseTextarea', BaseTextarea)
 // Vue.component('BaseIcon', BaseIcon)
@@ -29,10 +29,10 @@ Vue.component('BaseLink', BaseLink)
 // https://github.com/cretueusebiu/laravel-vue-spa/blob/master/resources/js/components/index.js
 
 // import Vue from 'vue'
-// import Card from './Card'
-// import Child from './Child'
-// import Button from './Button'
-// import Checkbox from './Checkbox'
+// import Card from '@/components/Card'
+// import Child from '@/components/Child'
+// import Button from '@/components/Button'
+// import Checkbox from '@/components/Checkbox'
 // import { HasError, AlertError, AlertSuccess } from 'vform'
 
 // // Components that are registered globaly.

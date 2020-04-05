@@ -1,4 +1,4 @@
-import { host, timeAgo } from '../filters'
+import { host, timeAgo } from '@/filters'
 
 describe('host', () => {
   test('returns empty string if url is undefined', () => {

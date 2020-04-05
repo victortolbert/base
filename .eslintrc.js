@@ -20,16 +20,16 @@ module.exports = {
   },
   plugins: ['jest'],
   extends: [
-    // https://github.com/vuejs/eslint-plugin-vue#bulb-rules
     'plugin:vue/recommended',
     'eslint:recommended',
-    // https://github.com/standard/standard/blob/master/docs/RULES-en.md
+    // https://github.com/standard/standard/blob/master/RULES.md
     '@vue/standard',
   ],
   rules: {
     camelcase: 0,
-    'dot-notation': 0,
     eqeqeq: 'off',
+    indent: ['error', 2],
+    'dot-notation': 0,
     'comma-dangle': ['error', 'always-multiline'],
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
@@ -38,10 +38,7 @@ module.exports = {
     'no-unused-vars': 1,
     'no-new': 0,
     'prefer-promise-reject-errors': 0,
-    // 'import/no-relative-parent-imports': 'error',
     'import/order': 'error',
-    indent: ['error', 2],
-    // 'vue/component-name-in-template-casing': 'error',
     'vue/component-name-in-template-casing': ['error', 'PascalCase', {
       registeredComponentsOnly: true,
       ignores: [],
@@ -55,17 +52,17 @@ module.exports = {
       extensions: ['jsx'],
       shouldMatchCase: false,
     }],
-    'vue/max-attributes-per-line': 'off',
-    // 'vue/max-attributes-per-line': [
-    //   'error',
-    //   {
-    //     singleline: 4,
-    //     multiline: {
-    //       max: 1,
-    //       allowFirstLine: false
-    //     }
-    //   }
-    // ],
+    // 'vue/max-attributes-per-line': 'off',
+    'vue/max-attributes-per-line': [
+      'error',
+      {
+        singleline: 4,
+        multiline: {
+          max: 1,
+          allowFirstLine: false
+        }
+      }
+    ],
     'vue/multiline-html-element-content-newline': 'off',
     'vue/no-template-shadow': 'off',
     'vue/no-unused-components': 'off',
@@ -80,7 +77,7 @@ module.exports = {
     'vue/arrow-spacing': 'error',
     'vue/block-spacing': 'error',
     'vue/brace-style': 'error',
-    // 'vue/camelcase': 'error',
+    'vue/camelcase': 'error',
     'vue/comma-dangle': ['error', 'always-multiline'],
     'vue/dot-location': ['error', 'property'],
     'vue/eqeqeq': 'error',

@@ -7,7 +7,7 @@ import 'nprogress/nprogress.css'
 // https://github.com/declandewet/vue-meta
 import Meta from 'vue-meta'
 import { sync } from 'vuex-router-sync'
-import routes from './routes'
+import routes from '@/router/routes'
 import store from '@/vuex/store'
 
 Vue.use(Router)
@@ -66,7 +66,7 @@ router.beforeEach((routeTo, routeFrom, next) => {
   // redirect to login.
   // redirectToLogin()
 
-  // function redirectToLogin() {
+  // function redirectToLogin () {
   //   // Pass the original route to the login component
   //   next({ name: 'login', query: { redirectFrom: routeTo.fullPath } })
   // }

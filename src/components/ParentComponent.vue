@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import ChildComponent from './ChildComponent'
+import ChildComponent from '@/components/ChildComponent'
 
 export default {
   name: 'ParentComponent',

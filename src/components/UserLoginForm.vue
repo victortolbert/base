@@ -84,6 +84,7 @@ export default {
           }).then(({ data }) => {
             // console.log(data)
             this.$store.commit('auth/SET_USER_DATA', data)
+
             this.$router.push({ name: 'dashboard' })
           }).catch((error) => {
             this.error = error

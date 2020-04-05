@@ -47,6 +47,7 @@ const mutations = {
 const actions = {
   initPrograms: ({ commit, rootGetters }) => {
     const programs = []
+    console.log('participant/participants: ', rootGetters['participant/participants'])
 
     rootGetters['participant/participants'].forEach(participant => {
       const programId = participant.participant_info.classroom.group.program_id

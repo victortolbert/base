@@ -16,7 +16,7 @@
           <div class="col-xs-12">
             <div class="offset-lg-4 text-center mx-auto mb-3 mt-3">
               <a
-                :href="special_url"
+                :href="specialUrl"
                 class="btn btn-lg btn-round btn-success w-100 mw-200px"
               >Give Now!</a>
             </div>

@@ -80,6 +80,7 @@ export default {
             this.schools = response.data
           }).catch(error => {
             // TODO: LOGGLY
+            // eslint-disable-next-line
             console.error(error)
           })
       } else {

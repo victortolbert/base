@@ -39,7 +39,6 @@ export default {
   mounted () {
     this.width = this.$el.getBoundingClientRect().width + 'px'
     this.height = this.$el.getBoundingClientRect().height + 'px'
-    console.dir(appConfig)
   },
   page: {
     title: appConfig.title,

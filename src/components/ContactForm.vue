@@ -211,16 +211,18 @@ export default {
           await this.getAllContacts()
           this.$router.push('/')
         }
-      } catch (ex) {
-        console.log(ex)
+      } catch (error) {
+        // eslint-disable-next-line
+        console.log(error)
       }
     },
     async getAllContacts () {
       try {
         const response = await this.getContacts()
         this.$store.commit('setContacts', response.data)
-      } catch (ex) {
-        console.log(ex)
+      } catch (error) {
+        // eslint-disable-next-line
+        console.log(error)
       }
     },
     getPostalCodeRegex () {

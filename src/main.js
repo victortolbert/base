@@ -28,7 +28,9 @@ import '@/plugins/tooltips'
 window.axios = require('axios')
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
 window.axios.defaults.withCredentials = true
-window.axios.defaults.baseURL = 'http://tolbert.test'
+// process.env.NODE_ENV === 'production'
+// TODO Make baseURL dependent on env
+window.axios.defaults.baseURL = 'https://tolbert.design'
 
 // Don't warn about using the dev version of Vue in development.
 Vue.config.productionTip = process.env.NODE_ENV === 'production'
